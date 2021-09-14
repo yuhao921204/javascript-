@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三个数排列</title>
+</head>
+
+<body>
+    <script>
+        var a = Number(prompt("输入第一个数"))
+        var b = Number(prompt("输入第二个数"))
+        var c = Number(prompt("输入第三个数"))
+        var num = a > b ? a : b
+        var max = num > c ? num : c
+        var num2 = a < b ? a : b
+        var min = num2 < c ? num2 : c
+        var mid = a + b + c - max - min
+        document.write(`${max}`, `${mid}`, `${min}`)
+    </script>
+</body>
+
+</html>
